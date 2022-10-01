@@ -75,6 +75,11 @@
         gap: 30px;
     }
 
+    .project__item {
+       display: flex;
+       flex-basis: calc((100% - 30px) / 2);
+    }
+
     .project__link {
         display: flex;
         flex-direction: column;
@@ -119,11 +124,11 @@
     }
 
     .project__border {
+        flex-grow: 1;
         padding: 20px 24px;
         border-right: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
         border-left: 1px solid #eeeeee;
-        flex-grow: 1;
     }
 
     .project__title {
@@ -143,6 +148,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .project__item {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+
     .project__link {
         display: block;
     }
