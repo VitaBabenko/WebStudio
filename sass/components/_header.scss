@@ -108,6 +108,10 @@
         background-color: var(--accent-color);
     }
 
+    .contact-list__item {
+        margin-bottom: 10px;
+    }
+
     .contact-list__link {
         display: flex;
         align-items: center;
@@ -125,10 +129,6 @@
         &:focus {
             color: var(--accent-color);
         }
-    }
-
-    .contact-list__link_margin {
-        margin-bottom: 10px;
     }
 
     .contact-list__icon {
@@ -149,6 +149,11 @@
     .contact-list {
         display: flex;
     }
+
+    .contact-list__item {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
     
     .contact-list__link {
         padding-top: 32px;
@@ -156,10 +161,6 @@
     
         font-size: var(--primary-font-size);
         line-height: 1.14;
-    }
-
-    .contact-list__link_margin {
-        margin-right: 30px;
     }
 
     .contact-list__icon {

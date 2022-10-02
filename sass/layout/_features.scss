@@ -3,7 +3,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 450px;
         height: 120px;
         border-radius: 4px;
         margin-bottom: 30px;
@@ -40,6 +39,10 @@
         gap: 30px;
     }
 
+    .features__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
     .features__wrapper {
         display: flex;
         align-items: center;
@@ -67,7 +70,6 @@
     }
 
     .features__text {
-        margin-bottom: 30px;
         width: 354px;
         font-size: var(--primary-font-size);
         line-height: 1.71;

@@ -1,4 +1,7 @@
 @media screen and (max-width:767px) {
+    img {
+        width: 100%;
+    }
     .team {
         background-color: var(--third-bg-color);
     }
@@ -75,11 +78,12 @@
     
     .team-list {
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         gap: 30px;
     }
     
     .team-list__item {
+        flex-basis: calc((100% - 30px) / 2);
         text-align: center;
     
         background-color: var(--primary-bg-color);
@@ -144,6 +148,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .team-list__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+
     .social-list {
         padding-bottom: 30px;
     }

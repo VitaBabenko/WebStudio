@@ -46,13 +46,11 @@
     .clients-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 30px;
-        row-gap: 30px;
+        gap: 30px;
     }
 
     .clients-list__item {
-        width: 170px;
+        flex-basis: calc((100% - 60px) / 3);
         height: 92px;
     }
 
@@ -86,3 +84,8 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .clients-list__item {
+        flex-basis: calc((100% - 150px) / 6);
+    }
+}
