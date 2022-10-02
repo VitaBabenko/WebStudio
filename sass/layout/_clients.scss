@@ -8,7 +8,7 @@
     }
     
     .clients-list__item {
-        width: 170px;
+        width: calc((100% - 30px) / 2);
         height: 92px;
     }
     

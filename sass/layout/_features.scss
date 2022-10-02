@@ -1,4 +1,8 @@
 @media screen and (max-width: 767px) {
+    .features__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
     .features__wrapper {
         display: flex;
         align-items: center;
@@ -26,7 +30,6 @@
     }
     
     .features__text {
-        margin-bottom: 30px;
         font-size: var(--primary-font-size);
         line-height: 1.71;
     }
